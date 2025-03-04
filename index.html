@@ -3,30 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>xAI Bank - Locations</title>
+    <title>xAI Bank - Exclusive Locations</title>
     <!-- Bootstrap 5.3 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9h0gCvkA++OhpIP4xPOGpsxU/2mM5mP4rvsJfvr6l8I9sLFCzJhN8o/hUEO7n+U6L6rU+E3L94i0W2W+Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
-            background-color: #f8f9fa;
-            padding-top: 50px;
-        }
-        .location-card {
-            margin-bottom: 20px;
+            background-color: #f5f5f5;
+            padding-top: 60px;
+            font-family: 'Georgia', serif;
         }
         .header {
-            background-color: #0d6efd;
-            color: white;
-            padding: 20px 0;
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f);
+            color: #fff;
+            padding: 40px 0;
             text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .location-card {
+            margin-bottom: 30px;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            transition: transform 0.3s;
+        }
+        .location-card:hover {
+            transform: translateY(-5px);
+        }
+        .card-title {
+            color: #1a2a6c;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .card-text i {
+            margin-right: 10px;
+            color: #b21f1f;
+        }
+        .map-link {
+            color: #1a2a6c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .map-link:hover {
+            color: #b21f1f;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <!-- Header -->
     <div class="header">
-        <h1>xAI Bank Locations</h1>
-        <p>Find a branch near you</p>
+        <h1>xAI Bank Exclusive Locations</h1>
+        <p>Discover Our Premier Banking Destinations</p>
     </div>
 
     <!-- Locations Section -->
@@ -36,10 +72,11 @@
             <div class="col">
                 <div class="card location-card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">New York, NY</h5>
-                        <p class="card-text">123 Wall St, New York, NY 10005</p>
-                        <p class="card-text"><strong>Phone:</strong> (212) 555-0101</p>
-                        <p class="card-text"><strong>Hours:</strong> Mon-Fri 9:00 AM - 5:00 PM</p>
+                        <h5 class="card-title">Manhattan, NY</h5>
+                        <p class="card-text"><i class="fas fa-map-marker-alt"></i> 740 Fifth Avenue, New York, NY 10019</p>
+                        <p class="card-text"><i class="fas fa-phone"></i> (212) 777-9001</p>
+                        <p class="card-text"><i class="fas fa-clock"></i> Mon-Fri: 8:30 AM - 6:00 PM | Sat: 10:00 AM - 2:00 PM</p>
+                        <p><a href="https://maps.google.com/?q=740+Fifth+Avenue,+New+York,+NY+10019" target="_blank" class="map-link"><i class="fas fa-map"></i> View on Google Maps</a></p>
                     </div>
                 </div>
             </div>
@@ -47,10 +84,11 @@
             <div class="col">
                 <div class="card location-card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">Los Angeles, CA</h5>
-                        <p class="card-text">456 Hollywood Blvd, Los Angeles, CA 90028</p>
-                        <p class="card-text"><strong>Phone:</strong> (310) 555-0202</p>
-                        <p class="card-text"><strong>Hours:</strong> Mon-Fri 8:30 AM - 4:30 PM</p>
+                        <h5 class="card-title">Beverly Hills, CA</h5>
+                        <p class="card-text"><i class="fas fa-map-marker-alt"></i> 9601 Wilshire Blvd, Beverly Hills, CA 90210</p>
+                        <p class="card-text"><i class="fas fa-phone"></i> (310) 888-1202</p>
+                        <p class="card-text"><i class="fas fa-clock"></i> Mon-Fri: 9:00 AM - 5:30 PM | Sat: 11:00 AM - 3:00 PM</p>
+                        <p><a href="https://maps.google.com/?q=9601+Wilshire+Blvd,+Beverly+Hills,+CA+90210" target="_blank" class="map-link"><i class="fas fa-map"></i> View on Google Maps</a></p>
                     </div>
                 </div>
             </div>
@@ -58,10 +96,11 @@
             <div class="col">
                 <div class="card location-card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">Chicago, IL</h5>
-                        <p class="card-text">789 Michigan Ave, Chicago, IL 60611</p>
-                        <p class="card-text"><strong>Phone:</strong> (312) 555-0303</p>
-                        <p class="card-text"><strong>Hours:</strong> Mon-Fri 9:00 AM - 6:00 PM</p>
+                        <h5 class="card-title">Chicago Gold Coast, IL</h5>
+                        <p class="card-text"><i class="fas fa-map-marker-alt"></i> 1122 N Dearborn St, Chicago, IL 60610</p>
+                        <p class="card-text"><i class="fas fa-phone"></i> (312) 999-1303</p>
+                        <p class="card-text"><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 6:00 PM | Sat: 9:00 AM - 1:00 PM</p>
+                        <p><a href="https://maps.google.com/?q=1122+N+Dearborn+St,+Chicago,+IL+60610" target="_blank" class="map-link"><i class="fas fa-map"></i> View on Google Maps</a></p>
                     </div>
                 </div>
             </div>
@@ -69,10 +108,11 @@
             <div class="col">
                 <div class="card location-card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">Houston, TX</h5>
-                        <p class="card-text">1010 Main St, Houston, TX 77002</p>
-                        <p class="card-text"><strong>Phone:</strong> (713) 555-0404</p>
-                        <p class="card-text"><strong>Hours:</strong> Mon-Fri 9:00 AM - 5:00 PM</p>
+                        <h5 class="card-title">Houston Galleria, TX</h5>
+                        <p class="card-text"><i class="fas fa-map-marker-alt"></i> 5085 Westheimer Rd, Houston, TX 77056</p>
+                        <p class="card-text"><i class="fas fa-phone"></i> (713) 666-1404</p>
+                        <p class="card-text"><i class="fas fa-clock"></i> Mon-Fri: 9:00 AM - 5:00 PM | Sat: 10:00 AM - 2:00 PM</p>
+                        <p><a href="https://maps.google.com/?q=5085+Westheimer+Rd,+Houston,+TX+77056" target="_blank" class="map-link"><i class="fas fa-map"></i> View on Google Maps</a></p>
                     </div>
                 </div>
             </div>
@@ -80,10 +120,11 @@
             <div class="col">
                 <div class="card location-card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">Miami, FL</h5>
-                        <p class="card-text">555 Ocean Dr, Miami, FL 33139</p>
-                        <p class="card-text"><strong>Phone:</strong> (305) 555-0505</p>
-                        <p class="card-text"><strong>Hours:</strong> Mon-Fri 8:00 AM - 4:00 PM</p>
+                        <h5 class="card-title">Miami Beach, FL</h5>
+                        <p class="card-text"><i class="fas fa-map-marker-alt"></i> 1680 Collins Ave, Miami Beach, FL 33139</p>
+                        <p class="card-text"><i class="fas fa-phone"></i> (305) 777-1505</p>
+                        <p class="card-text"><i class="fas fa-clock"></i> Mon-Fri: 8:30 AM - 5:30 PM | Sat: 11:00 AM - 3:00 PM</p>
+                        <p><a href="https://maps.google.com/?q=1680+Collins+Ave,+Miami+Beach,+FL+33139" target="_blank" class="map-link"><i class="fas fa-map"></i> View on Google Maps</a></p>
                     </div>
                 </div>
             </div>
@@ -91,10 +132,11 @@
             <div class="col">
                 <div class="card location-card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">Seattle, WA</h5>
-                        <p class="card-text">321 Pike St, Seattle, WA 98101</p>
-                        <p class="card-text"><strong>Phone:</strong> (206) 555-0606</p>
-                        <p class="card-text"><strong>Hours:</strong> Mon-Fri 9:00 AM - 5:00 PM</p>
+                        <h5 class="card-title">Seattle Downtown, WA</h5>
+                        <p class="card-text"><i class="fas fa-map-marker-alt"></i> 1420 Fifth Ave, Seattle, WA 98101</p>
+                        <p class="card-text"><i class="fas fa-phone"></i> (206) 888-1606</p>
+                        <p class="card-text"><i class="fas fa-clock"></i> Mon-Fri: 9:00 AM - 6:00 PM | Sat: 10:00 AM - 2:00 PM</p>
+                        <p><a href="https://maps.google.com/?q=1420+Fifth+Ave,+Seattle,+WA+98101" target="_blank" class="map-link"><i class="fas fa-map"></i> View on Google Maps</a></p>
                     </div>
                 </div>
             </div>
@@ -102,10 +144,11 @@
             <div class="col">
                 <div class="card location-card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">Boston, MA</h5>
-                        <p class="card-text">654 Tremont St, Boston, MA 02118</p>
-                        <p class="card-text"><strong>Phone:</strong> (617) 555-0707</p>
-                        <p class="card-text"><strong>Hours:</strong> Mon-Fri 9:00 AM - 5:00 PM</p>
+                        <h5 class="card-title">Boston Back Bay, MA</h5>
+                        <p class="card-text"><i class="fas fa-map-marker-alt"></i> 800 Boylston St, Boston, MA 02199</p>
+                        <p class="card-text"><i class="fas fa-phone"></i> (617) 999-1707</p>
+                        <p class="card-text"><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 5:00 PM | Sat: 9:00 AM - 1:00 PM</p>
+                        <p><a href="https://maps.google.com/?q=800+Boylston+St,+Boston,+MA+02199" target="_blank" class="map-link"><i class="fas fa-map"></i> View on Google Maps</a></p>
                     </div>
                 </div>
             </div>
@@ -113,10 +156,11 @@
             <div class="col">
                 <div class="card location-card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">Denver, CO</h5>
-                        <p class="card-text">987 Colfax Ave, Denver, CO 80204</p>
-                        <p class="card-text"><strong>Phone:</strong> (303) 555-0808</p>
-                        <p class="card-text"><strong>Hours:</strong> Mon-Fri 8:30 AM - 4:30 PM</p>
+                        <h5 class="card-title">Denver Cherry Creek, CO</h5>
+                        <p class="card-text"><i class="fas fa-map-marker-alt"></i> 3000 E 1st Ave, Denver, CO 80206</p>
+                        <p class="card-text"><i class="fas fa-phone"></i> (303) 777-1808</p>
+                        <p class="card-text"><i class="fas fa-clock"></i> Mon-Fri: 9:00 AM - 5:30 PM | Sat: 10:00 AM - 2:00 PM</p>
+                        <p><a href="https://maps.google.com/?q=3000+E+1st+Ave,+Denver,+CO+80206" target="_blank" class="map-link"><i class="fas fa-map"></i> View on Google Maps</a></p>
                     </div>
                 </div>
             </div>
@@ -124,10 +168,11 @@
             <div class="col">
                 <div class="card location-card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">Phoenix, AZ</h5>
-                        <p class="card-text">147 Camelback Rd, Phoenix, AZ 85012</p>
-                        <p class="card-text"><strong>Phone:</strong> (602) 555-0909</p>
-                        <p class="card-text"><strong>Hours:</strong> Mon-Fri 9:00 AM - 5:00 PM</p>
+                        <h5 class="card-title">Scottsdale, AZ</h5>
+                        <p class="card-text"><i class="fas fa-map-marker-alt"></i> 7135 E Camelback Rd, Scottsdale, AZ 85251</p>
+                        <p class="card-text"><i class="fas fa-phone"></i> (602) 888-1909</p>
+                        <p class="card-text"><i class="fas fa-clock"></i> Mon-Fri: 8:30 AM - 5:00 PM | Sat: 9:00 AM - 1:00 PM</p>
+                        <p><a href="https://maps.google.com/?q=7135+E+Camelback+Rd,+Scottsdale,+AZ+85251" target="_blank" class="map-link"><i class="fas fa-map"></i> View on Google Maps</a></p>
                     </div>
                 </div>
             </div>
@@ -135,10 +180,11 @@
             <div class="col">
                 <div class="card location-card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">Atlanta, GA</h5>
-                        <p class="card-text">258 Peachtree St, Atlanta, GA 30303</p>
-                        <p class="card-text"><strong>Phone:</strong> (404) 555-1010</p>
-                        <p class="card-text"><strong>Hours:</strong> Mon-Fri 9:00 AM - 5:00 PM</p>
+                        <h5 class="card-title">Atlanta Buckhead, GA</h5>
+                        <p class="card-text"><i class="fas fa-map-marker-alt"></i> 3343 Peachtree Rd NE, Atlanta, GA 30326</p>
+                        <p class="card-text"><i class="fas fa-phone"></i> (404) 999-2010</p>
+                        <p class="card-text"><i class="fas fa-clock"></i> Mon-Fri: 9:00 AM - 6:00 PM | Sat: 10:00 AM - 3:00 PM</p>
+                        <p><a href="https://maps.google.com/?q=3343+Peachtree+Rd+NE,+Atlanta,+GA+30326" target="_blank" class="map-link"><i class="fas fa-map"></i> View on Google Maps</a></p>
                     </div>
                 </div>
             </div>
